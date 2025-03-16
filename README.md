@@ -1,4 +1,4 @@
-# yolo_training
+![image](https://github.com/user-attachments/assets/bbfe5a6d-39f8-41f5-a251-8c44f664b592)# yolo_training
 
 ## 1. 準備訓練資料
 https://universe.roboflow.com/fmdv/fsoco-kxq3s
@@ -17,8 +17,17 @@ https://universe.roboflow.com/fmdv/fsoco-kxq3s
 ## 3. 開始訓練
 在該資料夾中打開cmd，打上python train.py，即可開始訓練
 
-
 ## 4. 訓練完後，找到best.pt的檔案，把它傳送到ubuntu
-訓練完後，會出現一個名字為runs的資料夾。在./runs/detect/trainXX/weights裡會有一個best.pt和一個last.pt。把best.pt想辦法傳送到ubuntu裡。
+訓練完後，會出現一個名字為runs的資料夾。在 ./runs/detect/trainXX/weights 裡會有一個best.pt和一個last.pt。把best.pt想辦法傳送到ubuntu裡。
 
-## 5. 
+## 5. 在ubuntu安裝ultralytics ros
+https://github.com/Alpaca-zip/ultralytics_ros
+照著上面的步驟安裝
+
+## 6. 在ultralytics_ros的資料夾裡找到models資料夾，把訓練好的.pt檔放進去
+ultralytics_ros 的package裡面的長相
+![image](https://github.com/user-attachments/assets/6bc102d4-d485-4c57-b9dc-596488d85bc8)
+
+## 7. 開始執行
+先用rosbag執行.bag檔，再使用指令：roslaunch ultralytics_ros tracker.launch debug:=true 執行ultralytics_ros。框好角錐的畫面會publish到/yolo_image裡面。
+![image](https://github.com/user-attachments/assets/263532b7-5c36-4f72-bfb9-b70f4634d71f)
