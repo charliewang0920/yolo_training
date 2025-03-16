@@ -1,5 +1,4 @@
-![image](https://github.com/user-attachments/assets/bbfe5a6d-39f8-41f5-a251-8c44f664b592)# yolo_training
-
+# yolo_training
 ## 1. 準備訓練資料
 https://universe.roboflow.com/fmdv/fsoco-kxq3s
 
