@@ -24,7 +24,7 @@ https://github.com/Alpaca-zip/ultralytics_ros
 照著上面的步驟安裝
 
 ## 6. 在ultralytics_ros的資料夾裡找到models資料夾，把訓練好的.pt檔放進去
-ultralytics_ros 的package裡面的長相
+ultralytics_ros 資料夾裡面的長相
 ![image](https://github.com/user-attachments/assets/6bc102d4-d485-4c57-b9dc-596488d85bc8)
 
 ## 7. 開始執行
